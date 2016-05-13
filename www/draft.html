@@ -1,0 +1,70 @@
+ <ion-side-menus>
+    <!-- Center content -->
+    <ion-side-menu-content>
+      <ion-header-bar class="bar bar-header bar-positive">
+        <button class="button button-icon" ng-click="toggleProjects()">
+        <i class="icon ion-navicon"></i>
+        </button>
+        <h1 class="title">Dinus APP</h1>
+        <button class="button button-icon" ng-click="newTask()">
+        <i class="icon ion-compose"></i>
+      </button>
+      </ion-header-bar>
+      <ion-content>
+      
+       <ng-include src="itemTemplate()"></ng-include>
+        
+      </ion-content>
+    </ion-side-menu-content>
+
+    <!-- Left menu -->
+   <ion-side-menu side="left">
+    <ion-header-bar class="bar bar-header bar-balanced">
+      <h1 class="title">Navigasi</h1>
+      <button class="button button-icon ion-plus" ng-click="newProject()">
+      </button>
+    </ion-header-bar>
+    <ion-content scroll="false">
+      <div class="list card">
+
+  <a href="#" ng-click="selectProject(0)" class="item item-icon-left">
+    <i class="icon ion-home"></i>
+    Enter home address
+  </a>
+
+  <a href="#" ng-click="selectProject(1)" class="item item-icon-left">
+    <i class="icon ion-ios-telephone"></i>
+    Enter phone number
+  </a>
+
+  <a href="#" ng-click="selectProject(2)" class="item item-icon-left">
+    <i class="icon ion-wifi"></i>
+    Enter wireless password
+  </a>
+
+  <a href="#" ng-click="selectProject(4)" class="item item-icon-left">
+    <i class="icon ion-card"></i>
+    Enter card information
+  </a>
+
+</div>
+    </ion-content>
+  </ion-side-menu>
+
+
+  </ion-side-menus>
+
+<div class="tabs tabs-icon-top">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+    Home
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+    Favorites
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+    Settings
+  </a>
+</div>    
